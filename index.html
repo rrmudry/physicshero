@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhysicsHero | Interactive Physics Simulations & Tools</title>
+  <meta name="description" content="Explore interactive physics simulations, computational labs, and visualization tools created for learners and educators. Hosted at physicshero.net.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ambient-glow"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="2"></circle>
+            <path d="M12 2a10 10 0 0 0-7.07 17.07l.07.07A10 10 0 0 0 12 22a10 10 0 0 0 7.07-2.86l.07-.07A10 10 0 0 0 12 2Z" opacity="0.3"></path>
+            <path d="M4.93 4.93C1.02 8.84 1.02 15.16 4.93 19.07"></path>
+            <path d="M19.07 4.93c3.91 3.91 3.91 10.23 0 14.14"></path>
+          </svg>
+        </div>
+        <span>PhysicsHero</span>
+        <span class="logo-badge">Portal</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#simulations">Simulations</a></li>
+          <li><a href="#about">About</a></li>
+          <li>
+            <a href="https://github.com/rrmudry/physicshero" class="btn-github" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-tag">
+      <span>⚡</span> Next-Gen Educational Physics
+    </div>
+    <h1>Visualizing the <span class="gradient-text">Laws of Nature</span></h1>
+    <p>
+      An open-access hub of interactive physics webapps, simulations, and computational models for physics students, educators, and enthusiasts.
+    </p>
+
+    <!-- Interactive Canvas Playground -->
+    <div class="canvas-wrapper">
+      <canvas id="physicsCanvas"></canvas>
+      <div class="canvas-hint">Interactive: Hover or click to manipulate gravitational & charge fields</div>
+    </div>
+  </section>
+
+  <!-- Main Showcase -->
+  <main>
+    <div class="section-header" id="simulations">
+      <div>
+        <h2 class="section-title">Physics Simulations & Tools</h2>
+        <p class="section-desc">Public, sanitized tools and experiments ported from classroom curriculum</p>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <!-- Card: Classical Mechanics -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">🎯</div>
+          <span class="card-status status-staging">Coming Soon</span>
+        </div>
+        <h3 class="card-title">Mechanics & Dynamics</h3>
+        <p class="card-description">
+          Kinematics, 2D projectile motion with drag, harmonic oscillators, and conservation laws with live parameter controls.
+        </p>
+        <div class="card-footer">
+          <div class="tag-list">
+            <span class="tag">Kinematics</span>
+            <span class="tag">Vectors</span>
+          </div>
+          <span class="card-link">Staging →</span>
+        </div>
+      </div>
+
+      <!-- Card: Waves & Optics -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">🌊</div>
+          <span class="card-status status-staging">Coming Soon</span>
+        </div>
+        <h3 class="card-title">Waves & Optics</h3>
+        <p class="card-description">
+          Wave superposition, Doppler shifts, thin lenses, and double-slit interference patterns with wave-front rendering.
+        </p>
+        <div class="card-footer">
+          <div class="tag-list">
+            <span class="tag">Interference</span>
+            <span class="tag">Ray Optics</span>
+          </div>
+          <span class="card-link">Staging →</span>
+        </div>
+      </div>
+
+      <!-- Card: Electromagnetism -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">⚡</div>
+          <span class="card-status status-staging">Coming Soon</span>
+        </div>
+        <h3 class="card-title">Fields & Electromagnetism</h3>
+        <p class="card-description">
+          Electrostatic point-charge field mapping, equipotential lines, Lorentz force particle deflectors, and circuit modeling.
+        </p>
+        <div class="card-footer">
+          <div class="tag-list">
+            <span class="tag">E-Field</span>
+            <span class="tag">Circuits</span>
+          </div>
+          <span class="card-link">Staging →</span>
+        </div>
+      </div>
+
+      <!-- Card: Modern & Thermal -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">⚛️</div>
+          <span class="card-status status-staging">Coming Soon</span>
+        </div>
+        <h3 class="card-title">Modern & Quantum Physics</h3>
+        <p class="card-description">
+          Photoelectric effect simulations, Bohr atomic spectra, relativistic time dilation, and blackbody radiation curves.
+        </p>
+        <div class="card-footer">
+          <div class="tag-list">
+            <span class="tag">Photons</span>
+            <span class="tag">Thermodynamics</span>
+          </div>
+          <span class="card-link">Staging →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About & Sanitization Notice -->
+    <div class="info-banner" id="about">
+      <h3>About PhysicsHero.net</h3>
+      <p>
+        <strong>physicshero.net</strong> is the public repository and showcase for interactive physics models and web applications developed by <strong>R. Mudry</strong>.
+      </p>
+      <p>
+        All applications deployed here are sanitized, standalone versions adapted from classroom course materials—free of proprietary data, student information, and course-specific grading assets—shared openly for learners and the wider physics community.
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-text">
+        &copy; 2026 <strong>PhysicsHero.net</strong> — Curated by R. Mudry. Open educational physics resources.
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/rrmudry/physicshero" target="_blank" rel="noopener">GitHub Repository</a>
+        <a href="https://github.com/rrmudry" target="_blank" rel="noopener">Profile</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/hero-canvas.js"></script>
+</body>
+</html>

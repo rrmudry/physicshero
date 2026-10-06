@@ -19,7 +19,7 @@ All student records, course-specific grading materials, and internal resources h
 - `.nojekyll` - Ensures direct static asset serving without Jekyll interference
 - `css/` - Global styling and design system
 - `js/` - Interactive scripts and canvas simulations
-- `apps/` - (Coming soon) Sanitized standalone web applications and simulation modules
+- `sound-wave-lab/` - Sound Wave Studio (tuning fork sinusoidal modeling lab), served at physicshero.net/sound-wave-lab/
 
 ## 🛠️ Local Development
 
